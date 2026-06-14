@@ -12,12 +12,12 @@ MSc AI Dissertation, University of West London, 2024 | Grade: 75 - Distinction
 - **Models**: Linear Regression, Decision Trees
 - **Features**: age, gender, analytics utilization 
 - **Targets**: curricular units credited, dropout/graduate
-- **Dataset**: N=___ higher education students 
+- **Dataset**: N= higher education students 
 
 ## Project Structure
-├── projectms.ipynb       # Main Jupyter/Colab notebook containing PySpark EDA and Scikit-Learn models
-├── README.md             # Repository summary and documentation
-└── requirements.txt      # Required Python dependencies
+- ├── projectms.ipynb       # Main Jupyter/Colab notebook containing PySpark EDA and Scikit-Learn models
+- ├── README.md             # Repository summary and documentation
+- └── requirements.txt      # Required Python dependencies
 
 ## Pipeline Structure:
 1. Data Ingestion & Profiling: Handled via PySpark to verify structural distributions and parse multi-feature schemas.
