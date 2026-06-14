@@ -12,19 +12,24 @@ MSc AI Dissertation, University of West London, 2024 | Grade: 75 - Distinction
 - **Models**: Linear Regression, Decision Trees
 - **Features**: age, gender, analytics utilization 
 - **Targets**: curricular units credited, dropout/graduate
-- **Dataset**: N=___ higher education students [don't say which uni if data is sensitive]
+- **Dataset**: N=___ higher education students 
 
-## Key Results
-- Age at enrollment was a significant predictor of retention [p < 0.05]
-- Decision Tree achieved ___% accuracy predicting dropout
-- Gender showed [insert your finding] correlation with performance
+## Project Structure
+├── projectms.ipynb       # Main Jupyter/Colab notebook containing PySpark EDA and Scikit-Learn models
+├── README.md             # Repository summary and documentation
+└── requirements.txt      # Required Python dependencies
+
+## Pipeline Structure:
+1. Data Ingestion & Profiling: Handled via PySpark to verify structural distributions and parse multi-feature schemas.
+2. Exploratory Data Analysis (EDA): Feature isolation via target variable cross-tabulation (evaluating graduation vs. dropout rates against core categorical segments like gender and financial standing).
+3. Data Quality Optimization: Addressed via feature scaling (StandardScaler), missingness profiling (missingno), and collinearity reduction.
+4. Predictive Modeling: Built using comparative architectures:
+5. Random Forest Classifier (Ensemble bagging approach)
+6. Logistic Regression Classifier (Parametric probability baseline)
+7. Hyperparameter Tuning & Evaluation: Performance optimization evaluated meticulously through Classification Reports before and after hyperparameter tuning.
 
 ## Impact
 Provides evidence for early-warning systems in universities to reduce dropout rates.
-
-## Reproduce
-pip install -r requirements.txt
-python src/train_model.py
 
 ## Full Thesis
 See Mehrunnisa Shaikh Dissertation.docx.pdf
