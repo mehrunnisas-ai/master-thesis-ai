@@ -27,4 +27,4 @@ pip install -r requirements.txt
 python src/train_model.py
 
 ## Full Thesis
-See Thesis_Mehrunnisa_2024.pdf
+See Mehrunnisa Shaikh Dissertation.docx.pdf
